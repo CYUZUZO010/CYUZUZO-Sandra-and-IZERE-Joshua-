@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation bar</title>
+  <style>
+    nav{
+      background-color: black;
+      width: 100%;
+    }
+    #droper{
+      background-color: indigo;
+      height: 1.6rem;
+      width: 15%;
+      color: rgb(184, 181, 181);
+      padding-top: 0.8rem;
+      border-radius: 3px;
+      float: right;
+    }
+    #connection-links li{
+      width: 102.4%;
+    }
+    #connection-links{
+      display: none;
+      background-color: rgb(214, 128, 217);
+      width: 107%;
+      border-radius: 3px;
+    }
+    #droper:hover{
+      cursor: pointer;
+    }
+    #droper:hover #connection-links{
+      display: block;
+      border-radius: 3px;
+    }
+    #connector{
+      padding-left: 13px;
+      padding-bottom: 0.46rem;
+    }
+    a{
+      color: aliceblue;
+      text-decoration: none;
+      display: inline-block;
+      width: 79.7%;
+      height: 100%;
+      padding: 10px;
+    }
+    .nav-links{
+      color: aliceblue;
+      text-decoration: none;
+    }
+    .nav-links:hover{
+      background-color: rgb(27, 64, 131);
+    }
+    .nav-links:active{
+      background-color: gray;
+    }
+    .nav-links:visited{
+      background-color: green;
+    }
+  
+    ul{
+      display: inline-block;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    #hom{
+      background-color: rgb(127, 72, 166);
+    }
+    #hom:hover{
+      background-color: rgb(9, 144, 144);
+    }
+  </style>
+</head>
+<body>
+  <h1>This is a normal navigation bar with a Dropdown</h1>
+  <nav id="nav">
+    <ul>
+      <li><a  id="hom" class="nav-links" href="Navigation_bar.html">Home</a></li>
+      <li><a class="nav-links" href="links.html">News</a></li>
+      <li><a class="nav-links" href="contact.html">Contact</a></li>
+      <li><a class="nav-links" href="about.html">about</a></li>
+    </ul>
+    <style>
+      li{
+        display: inline-block;
+      }
+    </style>
+  <nav id="droper">
+    <ul id="connector">
+      <li>Dropdown</li>
+    </ul>
+    <ul id="connection-links">
+      <li><a  id="home" class="nav-links" href="Navigation_bar.html">Home</a></li>
+      <li><a class="nav-links" href="links.html">News</a></li>
+      <li><a class="nav-links" href="contact.html">Contact</a></li>
+      <li><a class="nav-links" href="about.html">About</a></li>
+    </ul>
+    </nav>
+  </nav>
+ 
+</body>
+</html>
